@@ -731,10 +731,24 @@ button.fund-wallet {
 .tab-faq-qn {
     margin: 10px 0px 14px;
 }
+.tab-faq-qn .list{
+    padding: 0px 0px 0px 20px;
+}
+.tab-faq-qn .list input{
+    margin: 0px 10px 0px 0px;
+    background-color: #00000000;
+    height: 14px;
+    width: 14px;
+}
 .tab-faq-qn.two{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 10px 0px;
+}
+.tab-faq-qn h4,
+.tab-faq-qn label{
+    color: #2f3d4f;
 }
 .tab-faq-cards {
     height: fit-content;
