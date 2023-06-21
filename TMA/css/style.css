@@ -796,8 +796,8 @@ button.fund-wallet {
 
 .tab-faq-card .text .btm p {
     color: #2f3d4f;
-    font-size: 14px;
-    line-height: 25px;
+    font-size: 13px;
+    line-height: 18px;
 }
 
 .tab-faq-card .text .top h4 {
@@ -812,6 +812,7 @@ button.fund-wallet {
     color: #ffffff;
     font-size: 14px;
     font-weight: 400;
+    margin: 8px 0px 0px;
 }
 
 .tab-faq-btn {
