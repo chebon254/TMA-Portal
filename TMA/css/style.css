@@ -472,6 +472,7 @@ main {
 }
 
 .profile-info img {
+    border-radius: 65px;
     width: 130px;
     margin: 0px auto 10px;
 }
@@ -649,6 +650,10 @@ button.fund-wallet {
     border-bottom: 4px solid #43649c;
     font-weight: 700;
     position: relative;
+}
+
+.tablink.active {
+    border-bottom: 4px solid #ffffff;
 }
 
 .tablink:nth-child(1),
@@ -899,18 +904,21 @@ button.fund-wallet {
 .instituion-name h4 u {
     color: #2a76b7;
 }
-.institution-search{
+
+.institution-search {
     background-color: #d7dde6;
     padding: 10px;
 }
-.institution-search .search{
+
+.institution-search .search {
     width: 100%;
     padding: 0px 0px 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.institution-search .search input{
+
+.institution-search .search input {
     padding: 0px 20px;
     height: 50px;
     width: 65%;
@@ -919,7 +927,8 @@ button.fund-wallet {
     border-radius: 8px;
     box-shadow: inset -10px -10px 10px 0 #00000033;
 }
-.institution-search .search button{
+
+.institution-search .search button {
     height: 50px;
     width: 30%;
     color: #000000;
@@ -929,107 +938,129 @@ button.fund-wallet {
     border: 4px solid #a7a7a7;
     box-shadow: 2px 4px 16px #00000033;
 }
-.search-info{
+
+.search-info {
     padding: 10px 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.search-info span:nth-child(1){
+
+.search-info span:nth-child(1) {
     font-size: 16px;
     font-weight: 700;
     color: #2f3d4f;
 }
-.search-info span:nth-child(2){
+
+.search-info span:nth-child(2) {
     font-size: 16px;
     font-weight: 700;
     color: #4372c6;
 }
-.institution-verification{
+
+.institution-verification {
     flex-grow: 2;
     width: 100%;
     max-width: 840px;
 }
-.top-verfy-card{
+
+.top-verfy-card {
     border: 4px solid #2b5191;
     padding: 10px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
-.top-verfy-card .image{
+
+.top-verfy-card .image {
     height: 200px;
     width: 200px;
 }
-.top-verfy-card .image img{
+
+.top-verfy-card .image img {
     width: 200px;
 }
-.top-verfy-card .text{
+
+.top-verfy-card .text {
     margin: 0px 10px 0px;
 }
-.top-verfy-card .text .top{
+
+.top-verfy-card .text .top {
     padding: 5px 10px;
     text-align: center;
     background-color: #2f3d4f;
 }
-.top-verfy-card .text .top h3{
+
+.top-verfy-card .text .top h3 {
     color: #ffffff;
 }
-.content-text{
+
+.content-text {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
-.content-text .middle{
+
+.content-text .middle {
     width: 65%;
     padding: 10px;
     margin: 10px 0px 0px;
     background-color: #e8e7e7;
 }
-.content-text .middle p{
+
+.content-text .middle p {
     color: #2f3d4f;
     margin: 0px 10px 0px 0px;
 }
-.content-text .documents{
+
+.content-text .documents {
     width: 34%;
     padding: 10px 0px 0px;
 }
-.suppor-doc-link{
+
+.suppor-doc-link {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 5px 0px;
 }
-.suppor-doc-link .icon{
+
+.suppor-doc-link .icon {
     font-size: 20px;
-    color:  #545454;
+    color: #545454;
     padding: 0px 10px 0px 0px;
 }
-.suppor-doc-link a{
+
+.suppor-doc-link a {
     color: #2a76b7;
     text-decoration: underline;
 }
-.kyc-form{
+
+.kyc-form {
     width: 100%;
     border: 4px solid #2b5191;
     margin: 10px 0px 0px;
     padding: 10px;
 }
-.kyc-form form{
+
+.kyc-form form {
     width: 100%;
     height: fit-content;
 }
-.kyc-form form .form-title{
+
+.kyc-form form .form-title {
     width: 50%;
     background-color: #2f3d4f;
     padding: 5px 10px;
     text-align: center;
     margin: 0px 0px 10px;
 }
-.kyc-form form .form-title h4{
+
+.kyc-form form .form-title h4 {
     color: #ffffff;
 }
-.kyc-form form .form-group{
+
+.kyc-form form .form-group {
     height: fit-content;
     width: 100%;
     padding: 0px 0px 0px 60px;
@@ -1038,10 +1069,12 @@ button.fund-wallet {
     align-items: center;
     justify-content: space-between;
 }
-.kyc-form form .form-group h4{
+
+.kyc-form form .form-group h4 {
     color: #2f3d4f;
     line-height: 28px;
 }
+
 /* The container */
 .checkbox-contain {
     display: block;
@@ -1111,24 +1144,34 @@ button.fund-wallet {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-.form-group.input{
+
+.form-group.input {
     justify-content: center !important;
     padding: 20px 0px;
 }
-.form-group.input input{
+
+.form-group.input h4 {
+    width: 100%;
+    max-width: 200px;
+}
+
+.form-group.input input {
     padding: 0px 20px;
     height: 50px;
     width: 60%;
+    max-width: 450px;
     background-color: #ffffff;
     border: 4px solid #1a3564;
     border-radius: 8px;
     margin: 0px 0px 0px 10px;
     box-shadow: inset -10px -10px 10px 0 #00000033;
 }
-.form-group.input input.two{
+
+.form-group.input input.two {
     height: 80px !important;
 }
-.form-group.input button{
+
+.form-group.input button {
     height: 50px;
     width: 120px;
     color: #ffffff;
@@ -1136,10 +1179,379 @@ button.fund-wallet {
     font-size: 16px;
     margin: 0px 5px 0px;
 }
-.form-group.input button:nth-child(1){
+
+.form-group.input button:nth-child(1) {
     background-color: #538332;
 }
-.form-group.input button:nth-child(2){
+
+.form-group.input button:nth-child(2) {
     background-color: #853a10;
 }
+
 /* == || INSTITUTION == */
+
+
+
+
+
+/* == SME == */
+.sme-profile-info {
+    width: 300px;
+    max-width: 300px;
+    text-align: center;
+    position: relative;
+}
+
+.sme-profile-info img {
+    width: 280px;
+    margin: 25px auto 10px;
+}
+
+.sme-profile-info:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 2px;
+    height: 70%;
+    background: #5e86cb;
+    /* color of your choice */
+    transform: translateY(-50%);
+}
+
+.sme-profile-info .info-text h3 {
+    font-size: 26px;
+}
+
+.sme-profile-info .info-text p {
+    font-size: 20px;
+}
+
+.sme-watchlist {
+    position: relative;
+    padding: 10px;
+    width: 380px;
+}
+
+.sme-watchlist:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 2px;
+    height: 70%;
+    background: #5e86cb;
+    /* color of your choice */
+    transform: translateY(-50%);
+}
+
+.sme-watchlist .title {
+    padding: 10px 0px;
+}
+
+.sme-watch-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sme-watch-card .company {
+    height: 40px;
+    background-color: #e8e7e7;
+    padding: 2px 10px;
+    margin: 5px 10px 5px;
+    border-radius: 4px;
+    width: 120px !important;
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sme-watch-card .company p {
+    font-weight: 600;
+    color: #1a3564;
+}
+
+.sme-watch-card .fund-status {
+    height: 40px;
+    background-color: #a7a7a7;
+    margin: 5px 0px;
+    padding: 8px 0px;
+    border-radius: 6px;
+    width: 100px !important;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sme-watch-card .fund-status span {
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+}
+
+.sme-portfolio-summary {
+    flex-grow: 2;
+    margin: 10px 10px 0px;
+}
+
+.sme-portfolio-summary .title {
+    padding: 10px 0px;
+}
+
+.sme-summary-card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sme-summary-card .location {
+    background-color: #4372c6;
+    border: 4px solid #43649c;
+    margin: 5px 10px 5px 0px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    width: 280px;
+}
+
+.sme-summary-card .location p {
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.sme-summary-card .percentage {
+    background-color: #1d2532;
+    border: 4px solid #43649c;
+    margin: 5px 10px 5px 0px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    width: 100px;
+    text-align: center;
+}
+
+.sme-summary-card .percentage span {
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.sme-summary-card .link a {
+    color: #507bc8;
+    text-decoration: underline;
+}
+
+.sme-institution-container {
+    background-color: #f2f2f2;
+    border: 4px solid #2b5191;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.sme-instition-reference {
+    flex-grow: 1;
+    height: 100%;
+    flex-shrink: 1;
+    width: 100%;
+    max-width: 320px;
+}
+
+.sme-instituion-name {
+    padding: 10px;
+    background-color: #dadada;
+    margin: 0px 0px 10px;
+}
+
+.sme-instituion-name h3 {
+    margin: 20px 0px;
+    color: #383535;
+    line-height: 28px;
+    text-align: center;
+}
+
+.sme-instituion-name h4 {
+    text-align: center;
+    color: #383535;
+}
+
+.sme-name-cards {
+    padding: 10px 0px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.sme-name-cards span:nth-child(1) {
+    color: #383535;
+    width: 48%;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.sme-name-cards span:nth-child(2) {
+    color: #4372c6;
+    width: 48%;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.sme-institution-search {
+    background-color: #d7dde6;
+    padding: 10px;
+}
+
+
+.sme-institution-search form {
+    width: 100%;
+    height: fit-content;
+}
+
+.sme-search-info input {
+    padding: 0px 20px;
+    height: 50px;
+    width: 45%;
+    background-color: #ffffff;
+    border: 4px solid #1a3564;
+    border-radius: 8px;
+    box-shadow: inset -10px -10px 10px 0 #00000033;
+}
+
+.sme-search-info button {
+    height: 50px;
+    width: fit-content;
+    margin: auto;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 0px 20px;
+    background-color: #538332;
+    box-shadow: 2px 4px 16px #00000033;
+}
+
+.sme-search-info {
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sme-search-info span:nth-child(1) {
+    font-size: 14px;
+    font-weight: 700;
+    color: #2f3d4f;
+    margin: 0px 10px 0px 0px;
+    width: 60%;
+}
+
+.sme-search-info span:nth-child(2) {
+    font-size: 14px;
+    font-weight: 700;
+    color: #4372c6;
+}
+
+.sme-institution-verification {
+    flex-grow: 2;
+    width: 100%;
+    max-width: 780px;
+}
+
+.sme-kyc-form {
+    width: 100%;
+    border: 4px solid #2b5191;
+    margin: 0px 0px 0px;
+    padding: 10px;
+}
+
+.sme-kyc-form form {
+    width: 100%;
+    height: fit-content;
+}
+
+.sme-kyc-form form .form-title {
+    width: 50%;
+    background-color: #2f3d4f;
+    padding: 5px 10px;
+    text-align: center;
+    margin: 0px 0px 10px;
+}
+
+.sme-kyc-form form .form-title h4 {
+    color: #ffffff;
+}
+
+.sme-kyc-form form .sme-form-group {
+    height: fit-content;
+    width: 100%;
+    padding: 0px 0px 0px 50px;
+    margin: 8px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sme-kyc-form form .sme-form-group h4 {
+    color: #2f3d4f;
+    line-height: 28px;
+}
+
+.sme-form-group.input {
+    justify-content: space-between !important;
+    padding: 20px 0px;
+}
+
+.sme-form-group.input h4 {
+    width: 100%;
+    max-width: 400px;
+}
+
+.sme-form-group.input input {
+    padding: 0px 20px;
+    height: 50px;
+    width: 40%;
+    max-width: 450px;
+    background-color: #ffffff;
+    border: 4px solid #1a3564;
+    border-radius: 8px;
+    margin: 0px 0px 0px 10px;
+    box-shadow: inset -10px -10px 10px 0 #00000033;
+}
+
+.sme-form-group.input.two {
+    align-items: flex-start;
+    justify-content: center !important;
+}
+
+.sme-form-group.input.two h4 {
+    width: fit-content;
+    margin-right: 10px;
+}
+
+.sme-form-group.input input.two {
+    height: 120px !important;
+    width: 60%;
+}
+
+.sme-form-group.input button {
+    height: 50px;
+    width: 180px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0px 5px 0px;
+}
+
+.sme-form-group.input button:nth-child(1) {
+    background-color: #538332;
+}
+
+.sme-form-group.input button:nth-child(2) {
+    background-color: #853a10;
+}
+
+/* == || SME == */
