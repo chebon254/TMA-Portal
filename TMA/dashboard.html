@@ -160,8 +160,138 @@
                 </div>
             </div>
         </section>
+        <section class="tabs">
+            <div class="tab-container container">
+                <div class="tab-buttons">
+                    <button class="tablink" onclick="openTab(event, 'Tab1')">Opportunities</button>
+                    <button class="tablink updates" onclick="openTab(event, 'Tab2')">Africa Updates
+                        <span>5</span></button>
+                    <button class="tablink" onclick="openTab(event, 'Tab3')">Portfolio</button>
+                    <button class="tablink updates" onclick="openTab(event, 'Tab4')">Notifications
+                        <span>2</span></button>
+                </div>
+
+                <div id="Tab1" class="tabcontent">
+                    <div class="faq-container">
+                        <div class="faq-qns">
+                            <div class="faq-qn-top">
+                                <h4>Frequently Asked Questions</h4>
+                            </div>
+                            <div class="faq-qns-contain">
+                                <div class="faq-qn">
+                                    <h4>Lorem ipsum dolor amet?</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ipsum elit. Integer commodo tellus sit amet lobortis porttitor. Donec porttitor</p>
+                                </div>
+                                <div class="faq-qn">
+                                    <h4>ipsum dolor amet non ipsum?</h4>
+                                    <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit. Aliquamnon ipsum elit. Integer commodotellus sit amet lobortis porttitor.Donec porttitor metus in urnasemper interdum.</p>
+                                </div>
+                                <div class="faq-qn">
+                                    <h4>Sempei ipsum dolor amet</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ipsum elit. Integer commodo tellus sit amet lobortis porttitor. Donec porttitor metus in urna semper interdum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-cards">
+                            <div class="faq-card">
+                                <div class="image">
+                                    <img src="css/images/hotel.jpg" alt="Hotel sitting arrangement">
+                                </div>
+                                <div class="text">
+                                    <div class="top">
+                                        <h4>Restaurant, Uganda</h4>
+                                    </div>
+                                    <div class="btm">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ipsum elit.
+                                            Integer commodo tellus sit amet lobortis porttitor. Donec porttitor metus in
+                                            urna semper interdum. Donec blandit orci lorem, at consectetur massa
+                                            ullamcorper ut.</p>
+                                    </div>
+                                </div>
+                                <div class="faq-btn">
+                                    <button>More</button>
+                                </div>
+                            </div>
+                            <div class="faq-card">
+                                <div class="image">
+                                    <img src="css/images/garage.jpg" alt="man next to car in garage">
+                                </div>
+                                <div class="text">
+                                    <div class="top">
+                                        <h4>Motor Garage, Ghana</h4>
+                                    </div>
+                                    <div class="btm">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ipsum elit.
+                                            Integer commodo tellus sit amet lobortis porttitor. Donec porttitor metus in
+                                            urna semper interdum. Donec blandit orci lorem, at consectetur massa
+                                            ullamcorper ut.</p>
+                                    </div>
+                                </div>
+                                <div class="faq-btn">
+                                    <button>More</button>
+                                </div>
+                            </div>
+                            <div class="faq-card">
+                                <div class="image">
+                                    <img src="css/images/rolf milling.png" alt="Man next to milling machine">
+                                </div>
+                                <div class="text">
+                                    <div class="top">
+                                        <h4>Flour Mill, Malawi</h4>
+                                    </div>
+                                    <div class="btm">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ipsum elit.
+                                            Integer commodo tellus sit amet lobortis porttitor. Donec porttitor metus in
+                                            urna semper interdum. Donec blandit orci lorem, at consectetur massa
+                                            ullamcorper ut.</p>
+                                    </div>
+                                </div>
+                                <div class="faq-btn">
+                                    <button>More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Tab2" class="tabcontent">
+                    <h3>Tab 2</h3>
+                    <p>Content for Tab 2.</p>
+                </div>
+
+                <div id="Tab3" class="tabcontent">
+                    <h3>Tab 3</h3>
+                    <p>Content for Tab 3.</p>
+                </div>
+
+                <div id="Tab4" class="tabcontent">
+                    <h3>Tab 4</h3>
+                    <p>Content for Tab 4.</p>
+                </div>
+            </div>
+
+        </section>
     </main>
     <script src="js/scripts.js"></script>
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablink;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablink = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablink.length; i++) {
+                tablink[i].className = tablink[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementsByClassName("tablink")[0].click();
+
+    </script>
 </body>
 
 </html>

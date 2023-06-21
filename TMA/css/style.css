@@ -487,16 +487,19 @@ main {
 .profile-info .balance span {
     font-size: 14px;
 }
-.profile-info:after{
+
+.profile-info:after {
     content: "";
     position: absolute;
     top: 50%;
     right: 0;
     width: 2px;
     height: 70%;
-    background: #5e86cb; /* color of your choice */
+    background: #5e86cb;
+    /* color of your choice */
     transform: translateY(-50%);
 }
+
 button.fund-wallet {
     background-color: #538332;
     color: #ffffff;
@@ -509,92 +512,188 @@ button.fund-wallet {
     flex-grow: 2;
     margin: 0px 10px 0px;
 }
-.portfolio-summary  .title{
+
+.portfolio-summary .title {
     padding: 10px 0px;
 }
-.summary-card{
+
+.summary-card {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.summary-card .location{
+
+.summary-card .location {
     background-color: #4372c6;
     border: 4px solid #43649c;
-    margin: 5px 10px 5px 0px; 
+    margin: 5px 10px 5px 0px;
     padding: 8px 10px;
     border-radius: 6px;
     flex-grow: 2;
 }
-.summary-card .location p{
+
+.summary-card .location p {
     font-weight: 600;
     color: #ffffff;
 }
-.summary-card .percentage{
+
+.summary-card .percentage {
     background-color: #1d2532;
     border: 4px solid #43649c;
-    margin: 5px 10px 5px 0px; 
+    margin: 5px 10px 5px 0px;
     padding: 8px 10px;
     border-radius: 6px;
     width: 100px;
     text-align: center;
 }
-.summary-card .percentage span{
+
+.summary-card .percentage span {
     font-weight: 400;
     color: #ffffff;
     font-size: 14px;
 }
-.summary-card .link a{
+
+.summary-card .link a {
     color: #507bc8;
     text-decoration: underline;
 }
-.watchlist{
+
+.watchlist {
     position: relative;
     padding: 10px;
     width: 300px;
 }
-.watchlist:before{
+
+.watchlist:before {
     content: "";
     position: absolute;
     top: 50%;
     left: 0;
     width: 2px;
     height: 70%;
-    background: #5e86cb; /* color of your choice */
+    background: #5e86cb;
+    /* color of your choice */
     transform: translateY(-50%);
 }
-.watchlist .title{
+
+.watchlist .title {
     padding: 10px 0px;
 }
-.watch-card{
+
+.watch-card {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.watch-card span.fund-status-title{
+
+.watch-card span.fund-status-title {
     color: #1d2532;
     font-weight: 600;
 }
-.watch-card .company{
+
+.watch-card .company {
     background-color: #e8e7e7;
     padding: 2px 10px;
     margin: 10px 10px 10px 0px;
+    border-radius: 4px;
+    flex-grow: 2;
 }
-.watch-card .company p{
+
+.watch-card .company p {
     font-weight: 600;
     color: #1a3564;
 }
-.watch-card .fund-status{
+
+.watch-card .fund-status {
     background-color: #853a10;
     border: 4px solid #777272;
-    margin: 5px 10px 5px 0px; 
+    margin: 5px 10px 5px 0px;
     padding: 8px 0px;
     border-radius: 6px;
-    width: 100px;
+    width: 80px !important;
     text-align: center;
+    flex-grow: 1;
 }
-.watch-card .fund-status span{
+
+.watch-card .fund-status span {
     font-weight: 400;
     color: #ffffff;
     font-size: 14px;
 }
+
+.tab-container {
+    width: 100%;
+    border: 4px solid #43649c;
+    margin: 20px auto 10px;
+}
+
+.tab-buttons {
+    overflow: visible;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tablink {
+    background-color: #ffffff;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 18px;
+    flex-grow: 1;
+    border-bottom: 4px solid #43649c;
+    font-weight: 700;
+    position: relative;
+}
+
+.tablink:nth-child(1),
+.tablink:nth-child(2),
+.tablink:nth-child(3) {
+    border-right: 4px solid #43649c;
+}
+
+.tablink:nth-child(1) {
+    color: #2f3d4f;
+}
+
+.tablink:nth-child(2) {
+    color: #853a10;
+}
+
+.tablink:nth-child(3) {
+    color: #35571e;
+}
+
+.tablink:nth-child(4) {
+    color: #2b5499;
+}
+
+.tablink span {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 4px;
+    border: 4px solid #1a3564;
+    background-color: #c65a1e;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 13px;
+    top: -10px;
+    right: 20px;
+}
+
+.tablink:hover {
+    cursor: pointer;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+
 /* == || DASHBOARD == */
