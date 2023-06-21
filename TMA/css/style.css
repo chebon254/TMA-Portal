@@ -945,13 +945,110 @@ button.fund-wallet {
     font-weight: 700;
     color: #4372c6;
 }
+.institution-verification{
+    flex-grow: 2;
+    width: 100%;
+    max-width: 840px;
+}
+.top-verfy-card{
+    border: 4px solid #2b5191;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.top-verfy-card .image{
+    height: 200px;
+    width: 200px;
+}
+.top-verfy-card .image img{
+    width: 200px;
+}
+.top-verfy-card .text{
+    margin: 0px 10px 0px;
+}
+.top-verfy-card .text .top{
+    padding: 5px 10px;
+    text-align: center;
+    background-color: #2f3d4f;
+}
+.top-verfy-card .text .top h3{
+    color: #ffffff;
+}
+.content-text{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.content-text .middle{
+    width: 65%;
+    padding: 10px;
+    margin: 10px 0px 0px;
+    background-color: #e8e7e7;
+}
+.content-text .middle p{
+    color: #2f3d4f;
+    margin: 0px 10px 0px 0px;
+}
+.content-text .documents{
+    width: 34%;
+    padding: 10px 0px 0px;
+}
+.suppor-doc-link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px 0px;
+}
+.suppor-doc-link .icon{
+    font-size: 20px;
+    color:  #545454;
+    padding: 0px 10px 0px 0px;
+}
+.suppor-doc-link a{
+    color: #2a76b7;
+    text-decoration: underline;
+}
+.kyc-form{
+    width: 100%;
+    border: 4px solid #2b5191;
+    margin: 10px 0px 0px;
+    padding: 10px;
+}
+.kyc-form form{
+    width: 100%;
+    height: fit-content;
+}
+.kyc-form form .form-title{
+    width: 50%;
+    background-color: #2f3d4f;
+    padding: 5px 10px;
+    text-align: center;
+    margin: 0px 0px 10px;
+}
+.kyc-form form .form-title h4{
+    color: #ffffff;
+}
+.kyc-form form .form-group{
+    height: fit-content;
+    width: 100%;
+    padding: 0px 0px 0px 60px;
+    margin: 8px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.kyc-form form .form-group h4{
+    color: #2f3d4f;
+    line-height: 28px;
+}
 /* The container */
 .checkbox-contain {
     display: block;
     position: relative;
     padding-left: 35px;
-    margin-bottom: 12px;
     cursor: pointer;
+    height: 25px;
     font-size: 22px;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -973,9 +1070,11 @@ button.fund-wallet {
     position: absolute;
     top: 0;
     right: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
+    height: 29px;
+    width: 29px;
+    background-color: #ffffff;
+    border: 4px solid #1a3564;
+    border-radius: 5px;
 }
 
 /* On mouse-over, add a grey background color */
@@ -1003,7 +1102,7 @@ button.fund-wallet {
 /* Style the checkmark/indicator */
 .checkbox-contain .checkmark:after {
     left: 9px;
-    top: 5px;
+    top: 4px;
     width: 5px;
     height: 10px;
     border: solid white;
@@ -1012,5 +1111,35 @@ button.fund-wallet {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-
+.form-group.input{
+    justify-content: center !important;
+    padding: 20px 0px;
+}
+.form-group.input input{
+    padding: 0px 20px;
+    height: 50px;
+    width: 60%;
+    background-color: #ffffff;
+    border: 4px solid #1a3564;
+    border-radius: 8px;
+    margin: 0px 0px 0px 10px;
+    box-shadow: inset -10px -10px 10px 0 #00000033;
+}
+.form-group.input input.two{
+    height: 80px !important;
+}
+.form-group.input button{
+    height: 50px;
+    width: 120px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0px 5px 0px;
+}
+.form-group.input button:nth-child(1){
+    background-color: #538332;
+}
+.form-group.input button:nth-child(2){
+    background-color: #853a10;
+}
 /* == || INSTITUTION == */
