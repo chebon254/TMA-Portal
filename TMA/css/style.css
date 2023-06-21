@@ -791,6 +791,14 @@ button.fund-wallet {
     color: #ffffff;
     text-align: center;
 }
+.tab-faq-card .text .btm-btn {
+    background-color: #2f3d4f;
+    padding: 2px 20px;
+    width: fit-content;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+}
 
 .tab-faq-btn {
     height: 180px;
@@ -799,12 +807,22 @@ button.fund-wallet {
     align-items: center;
     justify-content: center;
 }
-
+.tab-faq-btn .btns{
+    text-align: center;
+}
 .tab-faq-btn button {
+    height: 50px;
+    width: 100px;
     padding: 10px 20px;
-    background-color: #528232;
     color: #ffffff;
     font-weight: 600;
+    margin: 2px auto;
+}
+.tab-faq-btn button:nth-child(1) {
+    background-color: #528232;
+}
+.tab-faq-btn button:nth-child(2) {
+    background-color: #c65a1e;
 }
 
 
