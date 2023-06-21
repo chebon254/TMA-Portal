@@ -20,7 +20,8 @@ body {
     width: 100%;
 }
 
-button, input {
+button,
+input {
     outline: none;
     border: 0px;
 }
@@ -731,25 +732,30 @@ button.fund-wallet {
 .tab-faq-qn {
     margin: 10px 0px 14px;
 }
-.tab-faq-qn .list{
+
+.tab-faq-qn .list {
     padding: 0px 0px 0px 20px;
 }
-.tab-faq-qn .list input{
+
+.tab-faq-qn .list input {
     margin: 0px 10px 0px 0px;
     background-color: #00000000;
     height: 14px;
     width: 14px;
 }
-.tab-faq-qn.two{
+
+.tab-faq-qn.two {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 0px;
 }
+
 .tab-faq-qn h4,
-.tab-faq-qn label{
+.tab-faq-qn label {
     color: #2f3d4f;
 }
+
 .tab-faq-cards {
     height: fit-content;
     width: 100%;
@@ -805,6 +811,7 @@ button.fund-wallet {
     color: #ffffff;
     text-align: center;
 }
+
 .tab-faq-card .text .btm-btn {
     background-color: #2f3d4f;
     padding: 2px 20px;
@@ -822,9 +829,11 @@ button.fund-wallet {
     align-items: center;
     justify-content: center;
 }
-.tab-faq-btn .btns{
+
+.tab-faq-btn .btns {
     text-align: center;
 }
+
 .tab-faq-btn button {
     height: 50px;
     width: 100px;
@@ -833,9 +842,11 @@ button.fund-wallet {
     font-weight: 600;
     margin: 2px auto;
 }
+
 .tab-faq-btn button:nth-child(1) {
     background-color: #528232;
 }
+
 .tab-faq-btn button:nth-child(2) {
     background-color: #c65a1e;
 }
@@ -844,6 +855,96 @@ button.fund-wallet {
 
 /* == || DASHBOARD == */
 /* == INSTITUTION == */
+.institution {
+    height: fit-content;
+    width: 100%;
+    padding: 20px 20px;
+}
+
+.institution-container {
+    background-color: #f2f2f2;
+    border: 4px solid #2b5191;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.instition-reference {
+    flex-grow: 1;
+    height: 100%;
+    flex-shrink: 1;
+    width: 100%;
+    max-width: 300px;
+}
+
+.instituion-name {
+    padding: 10px;
+    background-color: #dadada;
+    margin: 0px 0px 10px;
+}
+
+.instituion-name h3 {
+    margin: 20px 0px;
+    color: #383535;
+    line-height: 28px;
+    text-align: center;
+}
+
+.instituion-name h4 {
+    text-align: center;
+    color: #383535;
+}
+
+.instituion-name h4 u {
+    color: #2a76b7;
+}
+.institution-search{
+    background-color: #d7dde6;
+    padding: 10px;
+}
+.institution-search .search{
+    width: 100%;
+    padding: 0px 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.institution-search .search input{
+    padding: 0px 20px;
+    height: 50px;
+    width: 65%;
+    background-color: #ffffff;
+    border: 4px solid #1a3564;
+    border-radius: 8px;
+    box-shadow: inset -10px -10px 10px 0 #00000033;
+}
+.institution-search .search button{
+    height: 50px;
+    width: 30%;
+    color: #000000;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: #a7a7a7;
+    border: 4px solid #a7a7a7;
+    box-shadow: 2px 4px 16px #00000033;
+}
+.search-info{
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search-info span:nth-child(1){
+    font-size: 16px;
+    font-weight: 700;
+    color: #2f3d4f;
+}
+.search-info span:nth-child(2){
+    font-size: 16px;
+    font-weight: 700;
+    color: #4372c6;
+}
 /* The container */
 .checkbox-contain {
     display: block;
@@ -856,51 +957,51 @@ button.fund-wallet {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-  }
-  
-  /* Hide the browser's default checkbox */
-  .checkbox-contain input {
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-contain input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
     height: 0;
     width: 0;
-  }
-  
-  /* Create a custom checkbox */
-  .checkmark {
+}
+
+/* Create a custom checkbox */
+.checkmark {
     position: absolute;
     top: 0;
     right: 0;
     height: 25px;
     width: 25px;
     background-color: #eee;
-  }
-  
-  /* On mouse-over, add a grey background color */
-  .checkbox-contain:hover input ~ .checkmark {
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-contain:hover input~.checkmark {
     background-color: #ccc;
-  }
-  
-  /* When the checkbox is checked, add a blue background */
-  .checkbox-contain input:checked ~ .checkmark {
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-contain input:checked~.checkmark {
     background-color: #2196F3;
-  }
-  
-  /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
     content: "";
     position: absolute;
     display: none;
-  }
-  
-  /* Show the checkmark when checked */
-  .checkbox-contain input:checked ~ .checkmark:after {
+}
+
+/* Show the checkmark when checked */
+.checkbox-contain input:checked~.checkmark:after {
     display: block;
-  }
-  
-  /* Style the checkmark/indicator */
-  .checkbox-contain .checkmark:after {
+}
+
+/* Style the checkmark/indicator */
+.checkbox-contain .checkmark:after {
     left: 9px;
     top: 5px;
     width: 5px;
@@ -910,5 +1011,6 @@ button.fund-wallet {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-  }
+}
+
 /* == || INSTITUTION == */
