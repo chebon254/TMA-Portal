@@ -337,6 +337,7 @@ main {
 .faq-qns {
     width: 100%;
     max-width: 320px;
+    flex-shrink: 0;
 }
 
 .faq-qn-top {
@@ -390,46 +391,210 @@ main {
     justify-content: space-between;
     margin: 0px 0px 10px;
 }
-.faq-card .image{
+
+.faq-card .image {
     height: fit-content;
     width: fit-content;
     padding: 0px 10px 0px 0px;
 }
-.faq-card .image img{
+
+.faq-card .image img {
     height: 180px;
     width: 230px;
 }
-.faq-card .text{
+
+.faq-card .text {
     margin: 0px 10px;
 }
-.faq-card .text .top{
+
+.faq-card .text .top {
     background-color: #2f3d4f;
     padding: 8px 20px;
 }
-.faq-card .text .btm{
+
+.faq-card .text .btm {
     background-color: #e8e7e7;
     padding: 8px 20px;
     margin: 10px 0px 0px;
 }
-.faq-card .text .btm p{
+
+.faq-card .text .btm p {
     color: #2f3d4f;
     font-size: 14px;
     line-height: 25px;
 }
-.faq-card .text .top h4{
+
+.faq-card .text .top h4 {
     font-weight: 400;
     color: #ffffff;
+    text-align: center;
 }
-.faq-btn{
+
+.faq-btn {
     height: 180px;
     width: fit-content;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 }
-.faq-btn button{
+
+.faq-btn button {
     padding: 10px 20px;
     background-color: #528232;
     color: #ffffff;
     font-weight: 600;
 }
+
+
+
+
+
+/* == DASHBOARD == */
+.summary {
+    height: fit-content;
+    width: 100%;
+}
+
+.summary-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #eeeeee;
+    padding: 10px;
+}
+
+.profile-info {
+    width: 300px;
+    max-width: 300px;
+    text-align: center;
+    position: relative;
+}
+
+.profile-info img {
+    width: 130px;
+    margin: 0px auto 10px;
+}
+
+.profile-info .balance {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px 10px;
+}
+
+.profile-info .balance span {
+    font-size: 14px;
+}
+.profile-info:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 2px;
+    height: 70%;
+    background: #5e86cb; /* color of your choice */
+    transform: translateY(-50%);
+}
+button.fund-wallet {
+    background-color: #538332;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 8px 12px;
+    box-shadow: 0px 6px 16px #00000033;
+}
+
+.portfolio-summary {
+    flex-grow: 2;
+    margin: 0px 10px 0px;
+}
+.portfolio-summary  .title{
+    padding: 10px 0px;
+}
+.summary-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.summary-card .location{
+    background-color: #4372c6;
+    border: 4px solid #43649c;
+    margin: 5px 10px 5px 0px; 
+    padding: 8px 10px;
+    border-radius: 6px;
+    flex-grow: 2;
+}
+.summary-card .location p{
+    font-weight: 600;
+    color: #ffffff;
+}
+.summary-card .percentage{
+    background-color: #1d2532;
+    border: 4px solid #43649c;
+    margin: 5px 10px 5px 0px; 
+    padding: 8px 10px;
+    border-radius: 6px;
+    width: 100px;
+    text-align: center;
+}
+.summary-card .percentage span{
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 14px;
+}
+.summary-card .link a{
+    color: #507bc8;
+    text-decoration: underline;
+}
+.watchlist{
+    position: relative;
+    padding: 10px;
+    width: 300px;
+}
+.watchlist:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 2px;
+    height: 70%;
+    background: #5e86cb; /* color of your choice */
+    transform: translateY(-50%);
+}
+.watchlist .title{
+    padding: 10px 0px;
+}
+.watch-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.watch-card span.fund-status-title{
+    color: #1d2532;
+    font-weight: 600;
+}
+.watch-card .company{
+    background-color: #e8e7e7;
+    padding: 2px 10px;
+    margin: 10px 10px 10px 0px;
+}
+.watch-card .company p{
+    font-weight: 600;
+    color: #1a3564;
+}
+.watch-card .fund-status{
+    background-color: #853a10;
+    border: 4px solid #777272;
+    margin: 5px 10px 5px 0px; 
+    padding: 8px 0px;
+    border-radius: 6px;
+    width: 100px;
+    text-align: center;
+}
+.watch-card .fund-status span{
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 14px;
+}
+/* == || DASHBOARD == */
